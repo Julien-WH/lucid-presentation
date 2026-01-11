@@ -8,4 +8,8 @@ out/
 log/*.log
 tmp/**
 node_modules/
-.sass-cache
+.sass-cachearchive_presentations/
+archive_presentations/
+node_modules/
+archive_presentations/
+node_modules/

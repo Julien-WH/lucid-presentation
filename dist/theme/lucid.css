@@ -1,0 +1,330 @@
+/**
+ * LUCID Dark Theme for Reveal.js (Nuit)
+ * Based on DeepPrivate/LUCID "Trauma-Informed" Design System (v1.5)
+ * Aligned with Astro Project
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+:root {
+    /* --- PALETTE (V1.5 Argentique / Light Mode) --- */
+    --color-surface-950: #F9F7F2;
+    /* Papier (Bg) */
+    --color-surface-900: #F2EFE9;
+    --color-surface-800: #FFFFFF;
+    /* Card Bg */
+    --color-surface-50: #2D2D2D;
+    /* Text Main (Graphite) */
+    --color-surface-200: #666666;
+    /* Text Muted */
+
+    --color-primary-500: #786406;
+    /* Bronze Primary */
+    --color-secondary-500: #5D4E7B;
+    /* Violet (Secondary) */
+    --color-accent-500: #E3D081;
+    /* Gold (Highlight) */
+
+    /* Reveal.js Specific Variables */
+    --r-background-color: var(--color-surface-950);
+    --r-main-font: 'Inter', sans-serif;
+    --r-main-font-size: 46px;
+    /* Increased from 42px for better readability */
+    --r-main-color: var(--color-surface-50);
+    --r-block-margin: 20px;
+
+    --r-heading-font: 'Merriweather', serif;
+    --r-heading-color: var(--color-surface-50);
+    --r-heading-line-height: 1.2;
+    --r-heading-letter-spacing: -0.01em;
+    --r-heading-text-transform: none;
+    --r-heading-text-shadow: none;
+    --r-heading-font-weight: 700;
+
+    --r-link-color: var(--color-primary-500);
+    --r-link-color-dark: var(--color-secondary-500);
+    --r-link-color-hover: var(--color-accent-500);
+
+    --r-selection-background-color: var(--color-accent-500);
+    --r-selection-color: #1F2125;
+
+    --r-code-font: 'JetBrains Mono', monospace;
+}
+
+/* --- GLOBAL BACKGROUND TEXTURE (The "Grain" Effect) --- */
+body {
+    background-color: var(--r-background-color);
+    min-height: 100vh;
+}
+
+/* Noise Texture (Paper Effect) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.08;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperFiber'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperFiber)'/%3E%3C/svg%3E");
+    filter: sepia(100%) contrast(120%) brightness(0.95);
+    mix-blend-mode: multiply;
+}
+
+.reveal,
+.reveal-viewport {
+    background-color: transparent !important;
+}
+
+.reveal .slides {
+    z-index: 2;
+}
+
+/* --- TYPOGRAPHY & ELEMENTS --- */
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: var(--r-heading-font);
+    color: var(--r-heading-color);
+}
+
+.reveal h1 {
+    font-size: 2.5em;
+    border-bottom: 1px solid rgba(227, 208, 129, 0.3);
+    /* Primary 500 low op */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    /* Increased spacing */
+}
+
+.reveal h2 {
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+    /* Added spacing */
+}
+
+.reveal h3 {
+    font-size: 1.3em;
+    color: var(--color-primary-500);
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+    /* Added spacing */
+}
+
+.reveal p {
+    line-height: 1.6;
+    color: var(--color-surface-50);
+}
+
+.reveal strong {
+    color: var(--color-primary-500);
+    /* Gold for emphasis */
+    font-weight: 600;
+}
+
+.reveal ul,
+.reveal ol {
+    font-size: 0.9em;
+    color: var(--color-surface-50);
+    padding-left: 0;
+    margin-left: 1.5em;
+    text-align: left;
+    list-style-position: outside;
+}
+
+.reveal ul li,
+.reveal ol li {
+    margin-bottom: 0.6em;
+    line-height: 1.5;
+    padding-left: 0.3em;
+}
+
+.reveal ul ul,
+.reveal ol ol {
+    margin-top: 0.5em;
+    padding-left: 1em;
+}
+
+.reveal small {
+    color: var(--color-surface-200);
+    opacity: 0.8;
+}
+
+/* Blockquotes (Evidence Style - Light) */
+.reveal blockquote {
+    background: rgba(255, 255, 255, 0.6);
+    border-left: 4px solid var(--color-primary-500);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    padding: 1rem 1.5rem;
+    width: 80%;
+    color: var(--color-surface-50);
+}
+
+/* Code Blocks */
+.reveal pre {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    border: 1px solid var(--color-surface-800);
+}
+
+.reveal pre code {
+    font-family: var(--r-code-font);
+    background: #18191C;
+    /* Darker than bg */
+    color: #EAEAEA;
+    padding: 20px;
+    border-radius: 4px;
+    max-height: 500px;
+}
+
+/* Tables */
+.reveal table {
+    font-size: 0.8em;
+    /* Increased from 0.5em/auto for better readability */
+    color: var(--color-surface-50);
+}
+
+.reveal table th {
+    color: var(--color-primary-500);
+    border-bottom: 1px solid var(--color-surface-800);
+}
+
+.reveal table td {
+    border-bottom: 1px solid var(--color-surface-800);
+}
+
+/* --- UI COMPONENTS --- */
+
+/* Global Header / Breadcrumb */
+#global-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    /* FIX: Prevents overflow */
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--color-primary-500);
+    pointer-events: none;
+    /* Let clicks pass through */
+}
+
+#global-header .breadcrumb {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#global-header .breadcrumb span.separator {
+    color: var(--color-primary-500);
+    opacity: 0.5;
+}
+
+#global-header .logo-mini {
+    height: 30px;
+    opacity: 1;
+}
+
+
+/* Custom Badge */
+.badge {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.5em;
+    padding: 0.3em 0.8em;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-surface-50);
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.badge.primary {
+    background: rgba(227, 208, 129, 0.15);
+    color: var(--color-primary-500);
+    border: 1px solid rgba(227, 208, 129, 0.3);
+}
+
+/* Forensic Card (Glassmorphism Light) */
+.forensic-card {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(120, 100, 6, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.forensic-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-primary-500);
+}
+
+.forensic-card h4 {
+    margin-top: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8em;
+    color: var(--color-primary-500);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Reveal Controls */
+.reveal .controls {
+    color: var(--color-primary-500);
+}
+
+.reveal .progress {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.reveal .progress span {
+    background-color: var(--color-primary-500);
+    box-shadow: 0 0 10px rgba(227, 208, 129, 0.5);
+}
+
+/* Utilities */
+.text-left {
+    text-align: left;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.title-secondary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: var(--color-surface-200);
+    opacity: 0.7;
+    margin-top: -10px;
+    margin-bottom: 2rem;
+    /* Added spacing below subtitle */
+}
