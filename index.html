@@ -395,10 +395,16 @@
 					</div>
 					<p style="margin-top: 3rem;"><small>Julien Welschinger-Hueber — Certification CDUI 2025</small></p>
 					<aside class="notes">
-						Bonjour, je m'appelle Julien Welschinger-Hueber. Aujourd'hui je vais vous présenter LUCID, un
-						assistant d'investigation forensic local-first. C'est un projet Open Source et gratuit sous
-						licence AGPL-3.0. Ce n'est pas un projet fictif, c'est un outil réel que j'ai développé pour
-						répondre à un besoin concret.
+						<ul>
+							<li><strong>Présentation</strong> : Julien Welschinger-Hueber.</li>
+							<li><strong>Sujet</strong> : LUCID, assistant d'investigation forensic
+								<strong>local-first</strong>.
+							</li>
+							<li><strong>Statut</strong> : Projet Open Source (AGPL-3.0) et gratuit.</li>
+							<li><strong>Contexte</strong> : Outil <strong>réel</strong> développé pour un besoin
+								concret.
+							</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -451,20 +457,21 @@
 					</div>
 
 					<aside class="notes">
-						LUCID, c'est quoi ? Un assistant d'investigation forensic qui révolutionne la collecte de
-						preuves.
-						Au lieu de passer des heures à faire défiler manuellement des milliers de messages, LUCID
-						utilise l'IA locale pour analyser automatiquement vos conversations.
-						Il détecte les passages problématiques, les extrait, et les structure dans une chronologie
-						claire et exportable.
-						Trois piliers : Détection intelligente grâce à l'IA (Mistral) qui tourne en local sur votre
-						machine, Chronologie visuelle qui reconstruit automatiquement la timeline des événements, et
-						100% privé : aucune donnée ne quitte jamais votre ordinateur.
-						Le slogan : "Prouver sans revivre". L'idée est de ne plus forcer les personnes victimes à se
-						réexposer à leur trauma en relisant tout.
-						LUCID fait ce travail pénible à leur place, en toute confidentialité.
-						C'est un outil gratuit, open source, conçu avec des principes de Trauma-Informed Design et
-						Privacy by Design.
+						<ul>
+							<li><strong>Concept</strong> : Assistant forensic. Transforme une masse de messages en
+								preuves structurées.</li>
+							<li><strong>Problème</strong> : Scrolling manuel infini = ré-exposition au trauma.</li>
+							<li><strong>Solution</strong> :
+								<ul>
+									<li><strong>Détection</strong> : IA locale (Mistral).</li>
+									<li><strong>Chronologie</strong> : Reconstruction visuelle.</li>
+									<li><strong>Privé</strong> : 100% local, Zéro data leak.</li>
+								</ul>
+							</li>
+							<li><strong>Slogan</strong> : "Prouver sans revivre".</li>
+							<li><strong>Valeurs</strong> : Gratuit, Open Source, Trauma-Informed, Privacy by Design.
+							</li>
+						</ul>
 					</aside>
 				</section>
 				<!-- 1.3 Genèse personnelle -->
@@ -479,10 +486,18 @@
 						retrouver des <strong>sujets vagues</strong> dans des années de messages.
 					</p>
 					<aside class="notes">
-						Ce projet est né d'une situation réelle. Une amie proche a décidé de briser le silence et de
-						porter plainte. Elle s'est retrouvée face à un défi énorme : chercher des preuves dans des
-						années de conversations, mettre des dates précises sur des événements, retrouver des sujets
-						vagues dans des milliers de messages. C'est de là qu'est partie l'idée de LUCID.
+						<ul>
+							<li><strong>Origine</strong> : Situation réelle. Une amie proche a décidé de porter plainte.
+							</li>
+							<li><strong>Le Défi</strong> :
+								<ul>
+									<li>Trouver des preuves dans des années de conversations.</li>
+									<li>Dater des événements précis.</li>
+									<li>Retrouver des sujets vagues dans une masse de texte.</li>
+								</ul>
+							</li>
+							<li><strong>Déclic</strong> : Besoin d'un outil pour l'aider à traverser ça.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -523,8 +538,8 @@
 						<div class="fragment fade-up card danger">
 							<div style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--color-danger);"><i
 									class="ri-heart-pulse-line"></i></div>
-							<h4>Re-trauma</h4>
-							<p>Revivre les violences</p>
+							<h4>Victimisation secondaire</h4>
+							<p>Revivre le trauma à chaque lecture</p>
 						</div>
 					</div>
 
@@ -532,11 +547,19 @@
 						"Je voulais créer l'outil<br>que j'aurais aimé avoir."
 					</p>
 					<aside class="notes">
-						Le problème est simple mais dévastateur : si on ne tape pas pile-poil le bon mot dans la
-						recherche, on ne trouve rien. Zéro résultat. Résultat : des heures de scrolling infini dans des
-						milliers de messages, des nuits blanches à chercher, et surtout, se replonger dans les traumas à
-						chaque lecture. C'est une forme de revictimisation. J'ai voulu créer l'outil que j'aurais aimé
-						avoir dans cette situation.
+						<ul>
+							<li><strong>Constat</strong> : Recherche par mot-clé exact = insuffisant. Si on rate le mot,
+								on rate la preuve.</li>
+							<li><strong>Conséquences</strong> :
+								<ul>
+									<li><strong>Scrolling infini</strong> : Perte de temps.</li>
+									<li><strong>Nuits blanches</strong> : Épuisement.</li>
+									<li><strong>Victimisation secondaire</strong> : Revivre le trauma à chaque lecture.
+									</li>
+								</ul>
+							</li>
+							<li><strong>Mission</strong> : Créer l'outil que j'aurais aimé avoir pour elle.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -547,13 +570,13 @@
 						<div class="timeline-card fragment fade-up" data-fragment-index="0">
 							<h4><i class="ri-search-2-line" style="vertical-align: middle; margin-right: 0.25rem;"></i>
 								V0.1</h4>
-							<p>Recherche<br>sémantique</p>
+							<p>Recherche<br>flexible</p>
 						</div>
 						<div class="timeline-arrow fragment fade-up" data-fragment-index="1">→</div>
 						<div class="timeline-card fragment fade-up" data-fragment-index="1">
 							<h4><i class="ri-brain-line" style="vertical-align: middle; margin-right: 0.25rem;"></i>
 								V0.3</h4>
-							<p>RAG<br>(POC)</p>
+							<p>RAG & Recherche<br>sémantique</p>
 						</div>
 						<div class="timeline-arrow fragment fade-up" data-fragment-index="2">→</div>
 						<div class="timeline-card highlight fragment fade-up" data-fragment-index="2">
@@ -564,31 +587,48 @@
 					</div>
 					<p class="fragment fade-up" data-fragment-index="3" style="margin-top: 2rem;"><small>D'un outil
 							personnel à une solution complète d'investigation</small></p>
+					<aside class="notes">
+						<ul>
+							<li><strong>Évolution</strong> : Passage d'un script personnel à une architecture solide.
+							</li>
+							<li><strong>V0.1</strong> : Simple flexibilité de recherche.</li>
+							<li><strong>V0.3</strong> : Recherche <strong>sémantique</strong> (RAG) et vectorielle.</li>
+							<li><strong>V1.0</strong> : Puissance du graphe pour l'investigation complexe.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<!-- 1.6 Détail évolution -->
-				<section data-title="Recherche sémantique">
+				<section data-title="Recherche flexible">
 					<h3 class="text-bronze"><i class="ri-search-2-line"
-							style="vertical-align: middle; margin-right: 0.5rem;"></i> V0.1 — Recherche sémantique</h3>
+							style="vertical-align: middle; margin-right: 0.5rem;"></i> V0.1 — Recherche flexible</h3>
 					<p><small>Le premier pas</small></p>
 					<div class="grid-2" style="margin-top: 1.5rem;">
 						<div class="card text-left">
 							<h4>Le besoin</h4>
 							<p>Trouver un message <strong>sans connaître les mots exacts</strong></p>
-							<p><small>Recherche par approximation, par sens</small></p>
+							<p><small>Recherche par approximation, par ressemblance</small></p>
 						</div>
 						<div class="card text-left">
 							<h4>La solution</h4>
-							<p>Embeddings + recherche vectorielle</p>
-							<p><small>"menace" trouve aussi "je vais te faire regretter"</small></p>
+							<p>Flexibilité et tolérance</p>
+							<p><small>Recherche plus souple que l'orthographe stricte</small></p>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li><strong>Objectif</strong> : Sortir du "mot exact".</li>
+							<li><strong>V0.1</strong> : Recherche plus flexible, tolérance aux fautes d'orthographe
+								(fuzzy).</li>
+							<li><strong>Résultat</strong> : Moins de frustration, mais encore limité au texte brut.</li>
+						</ul>
+					</aside>
 				</section>
 
-				<section data-title="RAG">
+				<section data-title="RAG & Sémantique">
 					<h3 class="text-bronze"><i class="ri-brain-line"
-							style="vertical-align: middle; margin-right: 0.5rem;"></i> V0.3 — RAG (Retrieval Augmented
-						Generation)</h3>
+							style="vertical-align: middle; margin-right: 0.5rem;"></i> V0.3 — RAG & Recherche sémantique
+					</h3>
 					<p><small>La preuve de concept</small></p>
 					<div class="grid-2" style="margin-top: 1.5rem;">
 						<div class="card text-left">
@@ -598,10 +638,17 @@
 						</div>
 						<div class="card text-left">
 							<h4>La solution</h4>
-							<p>Interroger une IA avec le contexte des messages</p>
-							<p><small>Résultats plus larges, moins de précision requise</small></p>
+							<p>Embeddings + recherche vectorielle</p>
+							<p><small>Interroger une IA avec le contexte des messages</small></p>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li><strong>RAG</strong> : Retrieval Augmented Generation.</li>
+							<li><strong>Technique</strong> : Utilisation d'embeddings et recherche vectorielle.</li>
+							<li><strong>IA</strong> : L'IA répond en se basant sur les preuves extraites.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section data-title="Graph RAG">
@@ -673,6 +720,13 @@
 							<small>Vous savez où elles vont. Vous savez ce qu'on en fait.</small>
 						</p>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li><strong>Local-first</strong> : L'IA et les données restent sur la machine.</li>
+							<li><strong>Confiance</strong> : Répondre à la question "Où vont mes données ?".</li>
+							<li><strong>Économie</strong> : Zéro coût de cloud, souveraineté totale.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<!-- 1.9 Pourquoi Open Source -->
@@ -690,21 +744,35 @@
 						à quelqu'un sur internet.<br>
 						<strong>Pas sur ces sujets-là.</strong>
 					</p>
+					<aside class="notes">
+						<ul>
+							<li><strong>Auditabilité</strong> : Le code doit être vérifiable par n'importe qui.</li>
+							<li><strong>Transparence</strong> : Pas de boîte noire sur des sujets aussi sensibles.</li>
+							<li><strong>Éthique</strong> : Refus du modèle SaaS pour des preuves d'enquête.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<!-- 1.10 Pourquoi Gratuit -->
 				<section data-title="Gratuit">
 					<h2>Pourquoi gratuit ?</h2>
-					<blockquote>
-						"Si ça peut aider <strong>une seule personne</strong>,<br>
-						l'outil a suffisamment de raison d'exister."
-					</blockquote>
 					<p class="fragment fade-up" style="margin-top: 2rem;">
 						L'accès à la justice ne doit pas être un luxe.
 					</p>
 					<p class="fragment fade-up" style="margin-top: 1.5rem; opacity: 0.7;">
 						<em>Idéalement, je préférerais que cet outil<br>n'ait jamais eu lieu d'exister.</em>
 					</p>
+					<blockquote class="fragment fade-up" style="margin-top: 2rem;">
+						"Si ça peut aider <strong>une seule personne</strong>,<br>
+						l'outil a suffisamment de raison d'exister."
+					</blockquote>
+					<aside class="notes">
+						<ul>
+							<li><strong>Accessibilité</strong> : La justice ne doit pas être un luxe financier.</li>
+							<li><strong>Engagement</strong> : Un projet de sens avant d'être commercial.</li>
+							<li><strong>Vision</strong> : Un outil qu'on aimerait inutile, mais nécessaire.</li>
+						</ul>
+					</aside>
 				</section>
 
 			</section>
@@ -722,13 +790,15 @@
 						<p class="title-secondary">Méthodologie & Planification</p>
 					</div>
 					<aside class="notes">
-						Acte 2 : Gestion de projet. On va voir comment j'ai structuré le projet.
-						Méthodologie hybride : Waterfall pour la Discovery, Agile pour la réalisation.
-						Roadmap complète sur 5 semaines intensives.
-						7 Epics décomposés en 30 User Stories.
-						3 Profils des personnes utilisatrices (pas "personas" : approche trauma-informed).
-						Budget très réduit : 21,60€/mois en phase MVP.
-						Matrice des risques et stratégies de mitigation.
+						<ul>
+							<li><strong>Sujet</strong> : Gestion de projet & Structuration.</li>
+							<li><strong>Méthodologie</strong> : Hybride (Waterfall Discovery / Agile Réalisation).</li>
+							<li><strong>Scope</strong> : 5 semaines, 7 Epics, 30 User Stories.</li>
+							<li><strong>Utilisateurs</strong> : 3 <strong>Profils</strong> (approche Trauma-Informed).
+							</li>
+							<li><strong>Budget</strong> : MVP à 21,60€/mois.</li>
+							<li><strong>Risques</strong> : Matrice & Mitigation.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -777,16 +847,23 @@
 					</div>
 
 					<aside class="notes">
-						Méthodologie hybride : on combine Waterfall pour la phase Discovery et Agile pour la
-						réalisation.
-						Discovery en Waterfall : audit des besoins juridiques, cahier des charges strict, contraintes de
-						sécurité non-négociables (zero-network, local-first).
-						Réalisation en Agile : sprints courts (1-2 semaines), itérations sur l'UI basées sur les
-						retours, déploiement continu.
-						Pourquoi hybride ? Les contraintes de sécurité et l'architecture technique doivent être figées
-						dès le départ (on ne peut pas "itérer" sur la sécurité).
-						Mais l'UX trauma-informed nécessite de l'expérimentation et de l'adaptation : on découvre les
-						besoins au fur et à mesure.
+						<ul>
+							<li><strong>Stratégie</strong> : Hybride (Waterfall + Agile).</li>
+							<li><strong>Discovery (Waterfall)</strong> :
+								<ul>
+									<li>Audit juridique & Cahier des charges.</li>
+									<li>Contraintes Sécurité (Zero-network) = <strong>Non-négociables</strong>.</li>
+								</ul>
+							</li>
+							<li><strong>Réalisation (Agile)</strong> :
+								<ul>
+									<li>Sprints courts (1-2 semaines).</li>
+									<li>Itérations UX (Trauma-informed).</li>
+								</ul>
+							</li>
+							<li><strong>Pourquoi ?</strong> : Sécurité figée dès le départ, mais UX adaptable pour le
+								soin.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -914,16 +991,16 @@
 					</div>
 
 					<aside class="notes">
-						Roadmap complète du projet sur 5 semaines intensives.
-						Phase 1 : R&D et POC avec Meilisearch et ChromaDB (3-19 déc).
-						Design en parallèle : recherche UX, création du logo, maquettes et design system (5-20 déc).
-						Communication & Marketing : site vitrine (18-22 déc), visuels promo pour réseaux sociaux (20-25
-						déc), vidéo démo (2-4 jan).
-						Phase 2 : Refonte complète avec Graph RAG et migration SurrealDB (20-29 déc).
-						Pause pour les fêtes (30 déc), puis finalisation avec intégration UI et tests (3-5 jan).
-						Livrable final le 5 janvier 2026.
-						Approche métier complète : pas seulement le code, mais aussi l'identité visuelle, le site, les
-						supports de communication.
+						<ul>
+							<li><strong>Durée</strong> : 5 semaines intensives.</li>
+							<li><strong>Phase 1 (R&D)</strong> : 3-19 déc. POC (Meilisearch/ChromaDB). Design parallèle.
+							</li>
+							<li><strong>Comms</strong> : Site vitrine, Vidéo démo, Visuels (fin déc/début janv).</li>
+							<li><strong>Phase 2 (Refonte)</strong> : 20-29 déc. <strong>Graph RAG</strong> & SurrealDB.
+							</li>
+							<li><strong>Finalisation</strong> : Tests & UI (janvier). Livrable 5 janvier.</li>
+							<li><strong>Approche</strong> : Globale (Code + Identité + Comms).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -965,16 +1042,14 @@
 					</div>
 
 					<aside class="notes">
-						7 Epics décomposés en 30 User Stories au format Given/When/Then.
-						Epic 1 : Secure Foundation. Import et normalisation de WhatsApp, SMS, Messenger. Schéma unifié,
-						hachage cryptographique.
-						Epic 2 : Active Safety. Les protections trauma-informed : Tracing Paper, Quick Exit, Decoy Mode.
-						Epic 3 : AI Enrichment. Enrichissement local avec Vision LLM pour les images, Whisper pour
-						l'audio, Session Chunking pour les résumés.
-						Epic 4-7 : Investigation++. Outils avancés : GraphRAG pour les relations, Identity Rolodex pour
-						gérer les aliases, PDF Reports pour l'export.
-						Traçabilité complète : 31 exigences fonctionnelles (FR1-FR31) décomposées en 7 Epics, eux-mêmes
-						décomposés en 30 User Stories testables.
+						<ul>
+							<li><strong>Structure</strong> : 7 Epics > 30 User Stories (Given/When/Then).</li>
+							<li><strong>Epic 1 (Foundation)</strong> : Import, Schéma unifié, Hachage (FR1-FR5).</li>
+							<li><strong>Epic 2 (Safety)</strong> : Tracing Paper, Quick Exit (FR8, FR20-FR23).</li>
+							<li><strong>Epic 3 (Enrichment)</strong> : IA Locale (Vision, Whisper).</li>
+							<li><strong>Epics 4-7 (Investig++)</strong> : GraphRAG, Rolodex, Exports PDF.</li>
+							<li><strong>Total</strong> : 31 Exigences Fonctionnelles couvertes.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1006,15 +1081,15 @@
 					</div>
 
 					<aside class="notes">
-						Preuve de traçabilité : capture d'écran de la documentation technique montrant la couverture
-						complète.
-						Chaque Epic liste explicitement les FRs (Functional Requirements) et NFRs (Non-Functional
-						Requirements) qu'il couvre.
-						Par exemple, Epic 1 couvre FR1-FR5 et FR30 (import et offline), ainsi que NFR3, NFR5, NFR6,
-						NFR10 (isolation, reprise, erreurs, portabilité).
-						Epic 2 couvre FR8, FR20-FR23 (sécurité active) et NFR1-NFR2 (zero-network, latence).
-						Cette traçabilité garantit qu'aucune exigence n'est oubliée et que chaque User Story contribue à
-						un objectif métier clair.
+						<ul>
+							<li><strong>Preuve</strong> : Documentation technique complète.</li>
+							<li><strong>Mapping</strong> : Chaque Epic liste les FRs (Fonctionnels) et NFRs
+								(Non-Fonctionnels).</li>
+							<li><strong>Exemple Epic 1</strong> : Couvre FR1-5 (Import) + NFR3/5/6/10 (Isolation,
+								Portabilité).</li>
+							<li><strong>Exemple Epic 2</strong> : Couvre Sécurité Active + NFR1-2 (Zero-network).</li>
+							<li><strong>Garanti</strong> : 100% couverture des exigences métier.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1076,13 +1151,18 @@
 					</div>
 
 					<aside class="notes">
-						Approche trauma-informed : on utilise "Profil" au lieu de "Persona" pour respecter la dignité
-						des personnes utilisatrices.
-						3 profils clés avec leurs photos : Sophie (Requérante), Marc (Accompagnant), Maître Alix
-						(Avocate).
-						Vocabulaire éthique : on évite "victime" (agentivité), "pain points" (marketing de la
-						souffrance).
-						On préfère "personne victime" et "profil".
+						<ul>
+							<li><strong>Vocabulaire</strong> : "Profil" (pas Persona) = Dignité. "Personne victime" (pas
+								Victime).</li>
+							<li><strong>3 Profils clés</strong> :
+								<ul>
+									<li><strong>Sophie</strong> (Requérante).</li>
+									<li><strong>Marc</strong> (Accompagnant).</li>
+									<li><strong>Maître Alix</strong> (Avocate).</li>
+								</ul>
+							</li>
+							<li><strong>Approche</strong> : Refus du marketing de la souffrance ("pain points").</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1146,16 +1226,20 @@
 					</div>
 
 					<aside class="notes">
-						Sophie, 34 ans, infirmière, séparée avec 1 enfant. Traverse un divorce conflictuel.
-						50 000 messages WhatsApp avec son ex sur 3 ans. Alternance lune de miel / violences
-						psychologiques.
-						Son avocate lui demande des preuves concrètes de harcèlement pour la garde exclusive.
-						Problème : relire les messages violents provoque des crises d'angoisse (reviviscence).
-						Peur que ses données "fuitent" si elle utilise un outil en ligne.
-						Tech literacy intermédiaire : utilise les apps sociales mais ne comprend pas les termes
-						techniques.
-						Besoin : un outil qui lit à sa place, garantie absolue de confidentialité, transparence (Open
-						Source).
+						<ul>
+							<li><strong>Sophie</strong> : 34 ans, Infirmière, Divorce conflictuel.</li>
+							<li><strong>Situation</strong> : 50k messages sur 3 ans (Lune de miel / Violences).</li>
+							<li><strong>Besoin Juridique</strong> : Preuves de harcèlement pour garde exclusive.</li>
+							<li><strong>Blocage</strong> : Relire = Crises d'angoisse (Reviviscence).</li>
+							<li><strong>Tech</strong> : Intermédiaire. Peur des fuites de données.</li>
+							<li><strong>Solution attendue</strong> :
+								<ul>
+									<li>Un outil qui lit à sa place.</li>
+									<li>Confidentialité absolue.</li>
+									<li>Transparence (Open Source).</li>
+								</ul>
+							</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1220,19 +1304,16 @@
 					</div>
 
 					<aside class="notes">
-						Marc, 52 ans, juriste dans une association d'aide aux personnes victimes (CIDFF ou France
-						Victimes*).
-						Reçoit 15-20 personnes par semaine. Doit qualifier rapidement les faits (pénalement
-						répréhensibles ou non).
-						Problème : personnes désorganisées par le trauma, téléphones remplis de messages. Passe un temps
-						fou à scroller.
-						45 minutes par dossier : impossible de lire 3 ans de vie, mais ne peut rien rater d'essentiel
-						(menace de mort noyée dans le flot).
-						Tech literacy basique : utilise Office et logiciels métier, mais l'installation technique le
-						rebute.
-						Utilise le PC performant de l'association (compta/montage vidéo) pour lancer LUCID.
-						Besoin : vitesse d'analyse, vue hélicoptère, fiabilité (source exacte, pas d'hallucination).
-						Privilégie les solutions libres et Open Source pour ne pas dépendre de GAFAM.
+						<ul>
+							<li><strong>Marc</strong> : 52 ans, Juriste asso (CIDFF).</li>
+							<li><strong>Charge</strong> : 15-20 personnes/semaine. 45min/dossier.</li>
+							<li><strong>Problème</strong> : Personnes désorganisées, temps perdu à scroller.</li>
+							<li><strong>Besoin</strong> : Vitesse, Vue hélicoptère, Fiabilité (pas d'hallucinations).
+							</li>
+							<li><strong>Tech</strong> : Basique. Utilise PC Asso performant. Aime le Libre (pas GAFAM).
+							</li>
+							<li><strong>Objectif</strong> : Qualifier les faits rapidement (Pénal ou non ?).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1297,18 +1378,21 @@
 					</div>
 
 					<aside class="notes">
-						Maître Alix, 41 ans, avocate associée spécialisée en Droit de la Famille et Pénal (Paris).
-						Gère des contentieux lourds : divorces pour faute, violences conjugales.
-						Sait que la partie adverse tentera de disqualifier toute preuve non tangible.
-						Ne peut pas présenter des screenshots flous ou conversations tronquées (défaut de loyauté dans
-						la preuve).
-						Problème : clients qui envoient 500 captures d'écran en vrac par email.
-						Impossible de faire une recherche par mot-clé dans des images.
-						Risque éthique d'utiliser ChatGPT pour analyser des données confidentielles (Secret
-						Professionnel).
-						Tech literacy élevée : MacBook Pro M2/M3/M4, aucun frein technique.
-						Frein déontologique majeur : validera l'outil uniquement si le volet Privacy est béton.
-						Besoin : zéro data leak, exports PDF propres avec métadonnées, auditabilité (Open Source).
+						<ul>
+							<li><strong>Alix</strong> : 41 ans, Avocate Droit Famille/Pénal.</li>
+							<li><strong>Contexte</strong> : Contentieux lourds. Partie adverse agressive sur la forme.
+							</li>
+							<li><strong>Problème</strong> : Clients envoient 500 screenshots en vrac (inexploitable).
+							</li>
+							<li><strong>Contraintes</strong> :
+								<ul>
+									<li>Loyauté de la preuve (pas de tronquage).</li>
+									<li>Secret Pro (pas de ChatGPT).</li>
+								</ul>
+							</li>
+							<li><strong>Attente</strong> : Zéro data leak, Exports PDF propres avec métadonnées,
+								Auditabilité.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1388,15 +1472,15 @@
 					</div>
 
 					<aside class="notes">
-						User Journey de Sophie en 4 étapes.
-						Étape 1 : Le Choc & La Collecte. Submergée par 50 000 messages, ne sait pas par où commencer.
-						Étape 2 : L'Ingestion (Confiance). Installation LUCID local-first, drag & drop du ZIP. Promesse
-						"rien ne sort de votre ordi" la rassure.
-						Étape 3 : L'Investigation Assistée. Pose une question en langage naturel, LUCID affiche 12
-						citations datées avec sources. N'a pas eu à tout relire.
-						Étape 4 : La Constitution du Dossier. Sélection des messages, export PDF propre. Sentiment de
-						soulagement et d'être armée pour la justice.
-						Émotions : Détresse → Confiance → Soulagement → Empowerment.
+						<ul>
+							<li><strong>Étape 1 (Choc)</strong> : 50k messages. Submersion.</li>
+							<li><strong>Étape 2 (Ingestion)</strong> : Installation LUCID. Promesse "Local-first"
+								rassure.</li>
+							<li><strong>Étape 3 (Investigation)</strong> : Question naturelle. 12 citations datées. Pas
+								de relecture intégrale.</li>
+							<li><strong>Étape 4 (Dossier)</strong> : Export PDF propre.</li>
+							<li><strong>Émotions</strong> : Détresse → Confiance → Soulagement → Empowerment.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1472,17 +1556,16 @@
 					</div>
 
 					<aside class="notes">
-						User Journey de Marc en 4 étapes.
-						Étape 1 : Accueil de Sophie. 45 minutes pour qualifier les faits et orienter.
-						Étape 2 : Import sur le PC de l'Asso. Poste performant déjà configuré par le bénévole IT.
-						Lancement
-						de l'import en tâche de fond pour traitement asynchrone pendant l'écoute.
-						Étape 3 : Vue Hélicoptère. Utilise la fonction Chronologie pour voir les pics d'intensité.
-						Identifie rapidement les périodes critiques.
-						Étape 4 : Rapport de Synthèse. Imprime un rapport qu'il joint à la fiche de liaison pour
-						l'avocate. Sophie repart avec un plan d'action.
-						Gain de temps : 2h30 économisées par rapport à la lecture manuelle. Peut privilégier l'écoute
-						humaine.
+						<ul>
+							<li><strong>Étape 1 (Accueil)</strong> : 45 min pour orienter Sophie.</li>
+							<li><strong>Étape 2 (Import)</strong> : Sur PC Asso. Traitement asynchrone pendant l'écoute.
+							</li>
+							<li><strong>Étape 3 (Vue Hélico)</strong> : Chronologie = Pics d'intensité. Identification
+								périodes critiques.</li>
+							<li><strong>Étape 4 (Rapport)</strong> : Synthèse pour l'avocate. Sophie repart avec un
+								plan.</li>
+							<li><strong>Gain</strong> : 2h30 sauvées = Plus de temps pour l'écoute humaine.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1561,17 +1644,15 @@
 					</div>
 
 					<aside class="notes">
-						User Journey de Maître Alix en 4 étapes, présenté en grille 2×2.
-						Étape 1 : Réception du Dossier Brut. 500 captures d'écran en vrac par email. Impossible de
-						rechercher par mot-clé.
-						Étape 2 : Extraction Ciblée. Demande à son collaborateur d'utiliser LUCID pour extraire les
-						mots-clés critiques. Analyse IA lancée en arrière-plan.
-						Étape 3 : Vérification des Sources. Vérifie les citations via le lien source pour garantir
-						l'exactitude et anticiper la défense adverse.
-						Étape 4 : Pièce Recevable. Génère un PDF "Pièce n°12" avec métadonnées claires. Joint aux
-						conclusions. Recevable devant le JAF.
-						Gain : rigueur juridique, pas de risque de présenter des preuves tronquées ou des hallucinations
-						IA.
+						<ul>
+							<li><strong>Étape 1 (Réception)</strong> : 500 screenshots vrac. Inexploitable.</li>
+							<li><strong>Étape 2 (Extraction)</strong> : Collaborateur utilise LUCID. Mots-clés
+								critiques.</li>
+							<li><strong>Étape 3 (Vérif)</strong> : Clic sur source pour certifier l'exactitude.</li>
+							<li><strong>Étape 4 (Pièce)</strong> : PDF "Pièce n°12" avec métadonnées. Recevable JAF.
+							</li>
+							<li><strong>Gain</strong> : Rigueur juridique. Pas de risque de rejet.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1629,15 +1710,18 @@
 					</div>
 
 					<aside class="notes">
-						Budget très réduit : 21,60€/mois en phase MVP (auto-financé).
-						Phase 2 : ~32€/mois + tokens IA pour les personnes utilisatrices qui n'ont pas de machine
-						puissante.
-						Modèle économique : Association Loi 1901. Les personnes utilisatrices achètent des crédits IA
-						pour leur
-						consommation réelle (marge = 0%).
-						Après usage, elles peuvent se faire rembourser le solde non utilisé, ou le laisser en "crédit
-						suspendu" pour aider d'autres personnes utilisatrices.
-						Objectif : break-even, pas de profit. Structurellement déficitaire mais socialement rentable.
+						<ul>
+							<li><strong>Coût Fixe (Infra)</strong> : 21,60€/mois (Hébergement + Domaine).
+								<strong>Auto-financé</strong>.
+							</li>
+							<li><strong>Coût Variable (IA)</strong> : Pour ceux sans GPU (optionnel).
+								<ul>
+									<li>Modèle : Association loi 1901 à prix coûtant.</li>
+									<li>Utilisateur achète des crédits IA (marge 0%).</li>
+								</ul>
+							</li>
+							<li><strong>Philosophie</strong> : Déficitaire mais Socialement Rentable.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1689,15 +1773,17 @@
 					</table>
 
 					<aside class="notes">
-						Risque 1 : Fuite de données. Impact critique mais probabilité faible grâce à l'architecture
-						local-first et zero-network.
-						Risque 2 : Hallucination IA. Impact élevé, probabilité moyenne. Mitigation : citations exactes
-						obligatoires et validation humaine (human-in-the-loop).
-						Risque 3 : Rejet par les personnes utilisatrices. Impact moyen. Mitigation : design
-						trauma-informed et tests
-						d'utilisation pour valider l'approche.
-						Risque 4 : Complexité technique. Probabilité élevée (Graph RAG, SurrealDB, modèles locaux).
-						Mitigation : Smart Script d'installation et documentation complète.
+						<ul>
+							<li><strong>Risque 1 (Fuite)</strong> : Critique. Mitigation = Architecture
+								<strong>Local-First</strong> (100% sûr).
+							</li>
+							<li><strong>Risque 2 (Hallucination)</strong> : Élevé. Mitigation = Citations exactes
+								obligatoires + Validation Humaine.</li>
+							<li><strong>Risque 3 (Rejet)</strong> : Moyen. Mitigation = Design Trauma-Informed (soin).
+							</li>
+							<li><strong>Risque 4 (Tech)</strong> : Élevé (GraphRAG). Mitigation = Script d'install
+								simplifiée.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1716,8 +1802,11 @@
 						<p class="title-secondary">Le "Market Gap" de la Forensic</p>
 					</div>
 					<aside class="notes">
-						Acte 3 : Diagnostic et Stratégie.
-						Analyse du contexte, de l'écosystème et positionnement de LUCID.
+						<ul>
+							<li><strong>Usage</strong> : Statut, Tags, Catégories.</li>
+							<li><strong>Forme</strong> : Pill shape.</li>
+							<li><strong>Couleurs</strong> : Sémantiques (Vert=Ok, Jaune=Warning, Gris=Neutre).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1746,11 +1835,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						3.1 Contexte.
-						Deux facteurs majeurs :
-						1. Explosion des besoins avec le mouvement #MeToo et la libération de la parole.
-						2. Digitalisation de la justice : les preuves numériques sont de plus en plus centrales, et la
-						jurisprudence de 2024 ouvre la porte aux preuves "déloyales", ce qui change la donne.
+						<ul>
+							<li><strong>Facteur 1 (Social)</strong> : #MeToo + Libération de la parole = Explosion des
+								besoins de preuves.</li>
+							<li><strong>Facteur 2 (Unique)</strong> : Digitalisation des preuves + Jurisprudence 2024
+								(Preuve déloyale recevable).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1810,13 +1900,13 @@
 						</div>
 					</div>
 					<aside class="notes">
-						3.2 Écosystème.
-						4 catégories d'outils existent, mais aucune ne répond pleinement au besoin des personnes
-						victimes.
-						1. Forensic Pro : Trop cher et réservé à la police.
-						2. Grand Public : Fait des dumps bruts inexploitables pour une personne victime.
-						3. IA Cloud : Puissant mais DANGER CRITIQUE pour la privacy.
-						4. Système D : Gratuit mais chronophage et traumatisant.
+						<ul>
+							<li><strong>Forensic Pro</strong> : Trop cher, réservé Police.</li>
+							<li><strong>Grand Public</strong> : Dumps bruts inexploitables.</li>
+							<li><strong>IA Cloud</strong> : Puissant mais DANGER CRITIQUE pour la privacy.</li>
+							<li><strong>Système D</strong> : Gratuit mais traumatisant (scrolling manuel).</li>
+							<li><strong>Constat</strong> : Aucune solution complète pour la victime.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1874,10 +1964,12 @@
 						</table>
 					</div>
 					<aside class="notes">
-						3.3 Benchmark.
-						Comparaison directe. LUCID se positionne comme le seul outil Gratuit, Local (donc privé) et
-						Trauma-Informed.
-						C'est le seul qui coche toutes les cases pour notre cible.
+						<ul>
+							<li><strong>Comparaison</strong> : LUCID vs Le Reste.</li>
+							<li><strong>Positionnement</strong> : Seul outil <strong>Gratuit + Local +
+									Trauma-Informed</strong>.</li>
+							<li><strong>Conclusion</strong> : Le seul qui coche toutes les cases.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1915,11 +2007,12 @@
 							complète.</p>
 					</div>
 					<aside class="notes">
-						3.4 Complémentarité.
-						On ne concurrence pas Mémo de Vie ou App-Elles.
-						Ils sont sur le "Proactif" (noter au jour le jour).
-						LUCID est sur le "Rétrospectif" (analyser le passif de 3 ans de messages).
-						Les deux sont nécessaires.
+						<ul>
+							<li><strong>Pas de concurrence</strong> : Complémentaire à Mémo de Vie / App-Elles.</li>
+							<li><strong>Eux</strong> : Proactif (Au jour le jour).</li>
+							<li><strong>LUCID</strong> : Rétrospectif (Le passif de 3 ans).</li>
+							<li><strong>Besoin</strong> : Les deux sont nécessaires.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1966,11 +2059,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						3.5 SWOT.
-						Forces : Local-First et TID.
-						Faiblesses : Besoin d'un hardware décent (GPU/NPU) pour l'IA locale.
-						Opportunités : Le cadre légal évolue favorablement.
-						Menaces : Les formats d'export WhatsApp/Instagram changent souvent.
+						<ul>
+							<li><strong>Forces</strong> : Local-First + TID.</li>
+							<li><strong>Faiblesses</strong> : Hardware requis (GPU/NPU).</li>
+							<li><strong>Opportunités</strong> : Cadre légal favorable (Preuve déloyale).</li>
+							<li><strong>Menaces</strong> : Formats exports changeants (WhatsApp/Insta).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2003,10 +2097,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						3.6 Market Gap.
-						C'est notre proposition de valeur unique.
-						Il existe des outils locaux, des outils gratuits, des outils éthiques.
-						Mais aucun outil n'est à la fois Local + Gratuit + Trauma-Informed + IA Forensic.
+						<ul>
+							<li><strong>Proposition de Valeur</strong> : Unique.</li>
+							<li><strong>Le Gap</strong> : Aucun outil n'est à la fois <strong>Local + Gratuit +
+									Trauma-Informed + Forensic</strong>.</li>
+							<li><strong>LUCID</strong> : Comble ce vide.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2043,14 +2139,14 @@
 							<strong>prendre soin</strong>.</small>
 					</p>
 					<aside class="notes">
-						Je ne connaissais pas le Trauma-Informed Design avant ce projet.
-						En cherchant comment protéger les personnes utilisatrices qui manipulent des données sensibles
-						et
-						traumatisantes, j'ai découvert tout un champ de recherche académique et pratique.
-						Ça a complètement transformé ma vision du design. Ce n'est plus juste une question d'esthétique
-						ou d'ergonomie classique.
-						C'est une question de soin, de protection, de respect de la vulnérabilité des personnes.
-						Le design devient un acte de bienveillance.
+						<ul>
+							<li><strong>Révélation</strong> : Découverte du Trauma-Informed Design.</li>
+							<li><strong>Impact</strong> : Transforme la vision du design (pas juste esthétique, mais
+								<strong>Care</strong>).
+							</li>
+							<li><strong>Définition</strong> : Le design comme acte de bienveillance et de protection.
+							</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2103,21 +2199,13 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Le Trauma-Informed Design repose sur 5 piliers fondamentaux issus de la recherche en psychologie
-						du trauma.
-						1. Sécurité : Créer un environnement prévisible, sans surprises. La personne utilisatrice doit
-						toujours
-						savoir où il est et ce qui va se passer.
-						2. Choix : Donner le contrôle à la personne utilisatrice. Rien n'est imposé, tout peut être
-						désactivé ou
-						personnalisé.
-						3. Collaboration : Impliquer la personne utilisatrice dans le processus, ne pas lui imposer de
-						solutions
-						toutes faites.
-						4. Empowerment : Renforcer sa capacité d'action, lui redonner du pouvoir sur sa situation.
-						5. Confiance : Transparence totale sur ce que fait l'application, où vont les données, comment
-						ça fonctionne.
-						Ces 5 piliers ont guidé chaque décision de design dans LUCID.
+						<ul>
+							<li><strong>1. Sécurité</strong> : Prévisible, sans surprises.</li>
+							<li><strong>2. Choix</strong> : Contrôle total, tout est optionnel.</li>
+							<li><strong>3. Collaboration</strong> : Faire "avec", pas "pour".</li>
+							<li><strong>4. Empowerment</strong> : Redonner du pouvoir d'agir.</li>
+							<li><strong>5. Confiance</strong> : Transparence totale.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2148,15 +2236,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Le premier pilier est la Sécurité. Principe : ne jamais surprendre la personne utilisatrice.
-						Fil d'Ariane : Toujours visible en haut de l'interface. La personne utilisatrice sait où elle
-						est, d'où elle
-						vient, où il peut aller.
-						Palette apaisante : Bronze et violet. Pas de rouge qui est une couleur de stress et d'alerte.
-						Les couleurs sont douces, rassurantes.
-						Texture grain : Effet de grain photographique subtil. C'est une technique de "grounding" qui
-						ancre dans le réel, rappelle le papier, le tangible.
-						Tout est fait pour créer un environnement prévisible et apaisant.
+						<ul>
+							<li><strong>Principe</strong> : Ne jamais surprendre.</li>
+							<li><strong>Fil d'Ariane</strong> : Toujours savoir où on est.</li>
+							<li><strong>Palette</strong> : Bronze/Violet (Apaisant). Jamais de Rouge (Stress).</li>
+							<li><strong>Texture</strong> : Grain photo = Ancrage réel (Grounding).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2193,20 +2278,14 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Le deuxième pilier est le Choix. Principe : rien n'est imposé, tout est débrayable.
-						Mode Sobre : Permet de désactiver les textures et les animations. Certaines personnes peuvent
-						être sensibles aux mouvements ou aux effets visuels.
-						Thèmes nommés : "Papier" et "Nuit" ne sont pas de simples modes clair/sombre. Ce sont deux
-						réflexions et deux approches distinctes du design, chacune avec sa symbolique propre (grain
-						papier vs chambre noire, archives vs révélation).
-						Tracing Paper : Le contenu généré par l'IA est masqué par défaut par un effet de papier calque.
-						La personne utilisatrice choisit activement de le révéler.
-						Ton factuel : L'IA est programmée pour répondre de manière fonctionnelle, avec des données
-						vérifiées, sans jamais simuler de l'empathie. Pas de "Oh ma pauvre" ou de phrases
-						condescendantes. Juste des faits, des patterns détectés, des données objectives.
-						C'est crucial : on ne force jamais la personne utilisatrice à voir quelque chose qu'elle n'est
-						pas prête à
-						voir.
+						<ul>
+							<li><strong>Principe</strong> : Rien n'est imposé.</li>
+							<li><strong>Modes</strong> : Sobre (sans animations). Thèmes nommés (Papier/Nuit, pas
+								Light/Dark).</li>
+							<li><strong>Tracing Paper</strong> : Contenu masqué par défaut (Consentement de lecture).
+							</li>
+							<li><strong>Ton</strong> : Factuel, jamais de fausse empathie ("Oh ma pauvre").</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2235,13 +2314,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Le Tracing Paper est une feature clé du pilier Choix.
-						Par défaut, tout contenu généré par l'IA est masqué par un effet de flou, comme du papier
-						calque.
-						L'utilisateur doit cliquer activement pour révéler le contenu.
-						Pourquoi ? Parce que l'IA peut détecter des patterns de manipulation, de gaslighting, d'emprise.
-						Lire ces analyses peut être violent, réactivant. L'utilisateur doit être prêt.
-						C'est une forme de consentement éclairé appliqué au design d'interface.
+						<ul>
+							<li><strong>Feature Clé</strong> : Flou par défaut sur l'IA.</li>
+							<li><strong>Pourquoi ?</strong> : Lire un pattern de manipulation est violent.</li>
+							<li><strong>Mécanique</strong> : Clic actif pour révéler = Consentement éclairé.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2280,19 +2357,13 @@
 					</div>
 
 					<aside class="notes">
-						Ton factuel de l'IA : un choix éthique crucial.
-						L'IA ne doit JAMAIS simuler de l'empathie. Pas de "Oh ma pauvre", pas de "Je comprends votre
-						douleur", pas de phrases condescendantes ou infantilisantes.
-						Pourquoi ? Parce que c'est de la fausse empathie. L'IA n'a pas d'émotions, elle ne peut pas
-						"comprendre". Simuler de l'empathie serait manipulateur et irrespectueux.
-						À la place : ton fonctionnel et factuel. L'IA répond avec des données vérifiées, des patterns
-						détectés, des analyses objectives.
-						"3 patterns détectés : gaslighting, minimisation, inversion de culpabilité" plutôt que "Oh c'est
-						terrible ce qui vous arrive".
-						C'est plus respectueux, plus utile, et ça évite de créer une fausse relation émotionnelle avec
-						un outil.
-						L'utilisateur sait qu'il interagit avec une machine, et la machine agit comme une machine :
-						efficace, précise, neutre.
+						<ul>
+							<li><strong>Éthique</strong> : L'IA ne simule <strong>JAMAIS</strong> l'empathie
+								(manipulatoire).</li>
+							<li><strong>Approche</strong> : Fonctionnelle et Factuelle.</li>
+							<li><strong>Exemple</strong> : "3 patterns détectés" vs "C'est terrible".</li>
+							<li><strong>Relation</strong> : Homme-Machine claire. Outil neutre et fiable.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2324,16 +2395,12 @@
 						<p><small><strong>Action :</strong> Efface le DOM + Redirige vers Google "météo"</small></p>
 					</div>
 					<aside class="notes">
-						Le Quick Exit est une feature de sécurité critique pour les personnes en situation de contrôle
-						coercitif.
-						Deux méthodes : un bouton visible "Masquer ma visite" en haut à droite, et un raccourci clavier
-						invisible.
-						Le raccourci : appuyer 3 fois sur Shift en moins de 100ms. C'est un geste nerveux naturel,
-						indétectable par quelqu'un qui regarde par-dessus l'épaule.
-						Pas de confirmation "Êtes-vous sûr ?". En situation d'urgence, chaque seconde compte.
-						Action : efface complètement le DOM de la page et redirige vers une recherche Google "météo".
-						Plausible deniability.
-						C'est inspiré des sites d'aide aux personnes victimes de violences conjugales.
+						<ul>
+							<li><strong>Sécurité Critique</strong> : Contrôle coercitif.</li>
+							<li><strong>Méthodes</strong> : Bouton visible OU Raccourci invisible (Triple Shift).</li>
+							<li><strong>Action</strong> : Efface le DOM, redirige vers Météo. Pas de confirmation.</li>
+							<li><strong>But</strong> : Plausible deniability immédiate.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2364,17 +2431,12 @@
 					<p class="fragment fade-up" style="margin-top: 1rem;"><small><em>"C'est juste une app de notes, je
 								ne sais pas pourquoi ça s'appelle LUCID"</em></small></p>
 					<aside class="notes">
-						Le Decoy Mode est une protection extrême contre le contrôle coercitif.
-						Scénario : un partenaire violent découvre l'app sur le téléphone et force la personne à l'ouvrir
-						devant lui.
-						Deux mots de passe : le réel qui ouvre LUCID complet, et un mot de passe leurre qui ouvre une
-						fausse application de notes banales.
-						La fausse app est fonctionnelle, avec de vraies notes anodines (liste de courses, idées
-						cadeaux).
-						Plausible deniability totale : "C'est juste une app de notes, je ne sais pas pourquoi elle
-						s'appelle LUCID".
-						C'est une feature qu'on espère que personne n'aura jamais besoin d'utiliser. Mais si elle sauve
-						une vie, elle aura justifié tout le projet.
+						<ul>
+							<li><strong>Protection Extrême</strong> : Si forcé d'ouvrir l'app.</li>
+							<li><strong>Mécanique</strong> : 2 mots de passe (Vrai vs Leurre).</li>
+							<li><strong>Leurre</strong> : Ouvre une fausse app de notes banales (Courses, Cadeaux).</li>
+							<li><strong>Espoir</strong> : Ne jamais avoir à s'en servir.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2411,16 +2473,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						L'accessibilité cognitive va au-delà des normes WCAG classiques.
-						Police Lexend : Spécialement conçue pour faciliter la lecture pour les personnes dyslexiques et
-						en fatigue cognitive. Les formes de lettres sont optimisées.
-						Taille minimale 12px : Aucun texte en dessous de cette taille. Pas de petits caractères
-						illisibles.
-						Hiérarchie typographique stricte : H1, H2, H3 bien différenciés. Réduction de la charge
-						cognitive, on sait immédiatement ce qui est important.
-						Espacement généreux : Line-height de 1.6 minimum. L'œil se fatigue moins, la lecture est plus
-						confortable.
-						Le trauma affecte les capacités cognitives. On doit en tenir compte dans le design.
+						<ul>
+							<li><strong>Cognitif</strong> : Au-delà du WCAG. Trauma = Fatigue cognitive.</li>
+							<li><strong>Police Lexend</strong> : Optimisée dyslexie & lecture fluide.</li>
+							<li><strong>Taille</strong> : Min 12px. Line-height 1.6 généreux.</li>
+							<li><strong>Hiérarchie</strong> : H1/H2/H3 très marqués pour réduire la charge mentale.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2486,14 +2544,13 @@
 					</div>
 
 					<aside class="notes">
-						L'architecture de LUCID est 100% local-first. Aucune donnée ne quitte jamais votre machine.
-						Trois composants : Tauri pour l'application desktop, SurrealDB pour stocker les données
-						localement, Ollama pour faire tourner les modèles IA en local.
-						Tout tourne sur votre ordinateur. Pas de serveur distant, pas de cloud, pas de connexion
-						sortante.
-						C'est la seule façon de garantir une confidentialité absolue pour des données aussi sensibles.
-						Si vous n'avez pas de GPU puissant, vous pouvez utiliser des crédits IA pour interroger des
-						modèles distants, mais c'est optionnel et transparent.
+						<ul>
+							<li><strong>100% Local-First</strong> : Zéro donnée sortante.</li>
+							<li><strong>Stack</strong> : Tauri (Desktop) + SurrealDB (Graphe Local) + Ollama (IA
+								Locale).</li>
+							<li><strong>Option</strong> : Crédits IA distants possible si pas de GPU, mais transparent.
+							</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2519,14 +2576,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Même le site vitrine respecte la privacy by design.
-						Zéro cookies : Pas de cookies, donc pas de bandeau RGPD agaçant. Vous pouvez vérifier dans la
-						Network tab de votre navigateur.
-						Plausible Analytics : Solution éthique d'analytics. Ne collecte pas les IP, pas de
-						fingerprinting, pas de tracking cross-site.
-						Serveur hébergé en Europe, conforme RGPD sans besoin de consentement car les données sont
-						anonymisées à la source.
-						On veut savoir combien de personnes visitent le site, pas qui elles sont.
+						<ul>
+							<li><strong>Privacy by Design</strong> : Même sur le site public.</li>
+							<li><strong>Cookies</strong> : Zéro. Donc pas de bandeau RGPD.</li>
+							<li><strong>Analytics</strong> : Plausible (Pas d'IP, pas de fingerprint, Serveur EU).</li>
+							<li><strong>Objectif</strong> : Compter les visites, pas tracker les gens.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2554,14 +2609,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						La mailing list est aussi conçue de manière éthique.
-						Données minimales : On ne stocke que l'adresse email. Pas de nom, pas de prénom, pas de tracking
-						de quand vous ouvrez les emails.
-						Droit à l'oubli simplifié : Si vous entrez deux fois le même email, il est automatiquement
-						supprimé. Instantané, pas "sous 48h ouvrables".
-						Engagement : Tous les emails seront supprimés après l'envoi de la notification de lancement. On
-						ne garde pas de base de données marketing.
-						C'est une liste de notification, pas un outil de marketing. Respect total de la vie privée.
+						<ul>
+							<li><strong>Minimalisme</strong> : Email seul. Pas de nom.</li>
+							<li><strong>Droit à l'oubli</strong> : 2x le même email = Suppression immédiate.</li>
+							<li><strong>Engagement</strong> : Suppression totale après lancement. Pas de base marketing.
+							</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2607,16 +2660,16 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Le concept créatif de LUCID s'appelle "Argentique Forensic".
-						Il repose sur une double inspiration : le papier d'archive et la photo argentique.
-						Le papier d'archive représente l'immuable, ce qui ne se falsifie pas, le dossier juridique
-						structuré. C'est rassurant, tangible, chaleureux.
-						La photo argentique, c'est le processus de révélation dans la chambre noire : on plonge le
-						papier dans le révélateur et l'image apparaît progressivement. C'est exactement ce que fait
-						LUCID : révéler les patterns cachés dans les conversations.
-						Quatre mots-clés : Structure pour la rigueur juridique, Lumière pour la révélation de la vérité,
-						Bouclier pour la protection des personnes, Tangible pour résister à la falsification numérique.
-						Ces deux inspirations se retrouvent dans les deux thèmes visuels : Papier et Nuit.
+						<ul>
+							<li><strong>Inspirations</strong> : Minimalisme, Obscurité éclairée.</li>
+							<li><strong>Éléments clés</strong> :
+								<ul>
+									<li><strong>Grain argentique</strong> : Texture vérité.</li>
+									<li><strong>Jaune doux</strong> : Lumière révélatrice/espoir.</li>
+									<li><strong>Noir profond</strong> : Confidentialité/Profondeur.</li>
+								</ul>
+							</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -2662,7 +2715,7 @@
 									<li style="color: oklch(0.93 0 0) !important;"><strong
 											style="color: oklch(0.93 0 0) !important;">Grain argentique</strong> :
 										Texture vérité</li>
-									<li style="color: oklch(0.93 0 0) !important;"><strong
+									<li style="color: oklch(0.84 0.1 95) !important;"><strong
 											style="color: oklch(0.84 0.1 95) !important;">Jaune doux</strong> : Lumière
 										révélatrice</li>
 									<li style="color: oklch(0.93 0 0) !important;"><strong
@@ -2881,20 +2934,19 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Le logo final s'appelle "The Door" - La Porte.
-						C'est une porte entrouverte qui laisse passer la lumière. Symbolique triple :
-						L'ouverture : passage de l'ombre à la lumière, de l'ignorance à la connaissance, du trauma à la
+						The final logo is called "The Door".
+						It's an ajar door that lets light through. Triple symbolism:
+						The opening: passage from shadow to light, from ignorance to knowledge, from trauma to
 						reconstruction.
-						La stabilité : formes géométriques solides, lignes droites. Ça évoque la rigueur, la fiabilité,
-						le cadre juridique.
-						Le cadre : la porte est un cadre qui protège, qui structure. Comme LUCID structure
-						l'investigation.
-						Point technique important : le logo utilise la police Merriweather, la même que pour les
-						citations et le contenu éditorial, mais j'ai légèrement arrondi les angles pour adoucir les
-						empattements. Cela crée un lien typographique fort avec l'identité globale tout en gardant une
-						forme distinctive pour le logo.
-						Le logo a été créé sur Adobe Illustrator pour garantir une précision vectorielle parfaite et une
-						scalabilité infinie.
+						Stability: solid geometric shapes, straight lines. This evokes rigor, reliability, the legal
+						framework.
+						The frame: the door is a frame that protects, that structures. Like LUCID structures the
+						investigation.
+						Important technical point: the logo uses the Merriweather font, the same as for quotes and
+						editorial content, but I slightly rounded the angles to soften the serifs. This creates a strong
+						typographic link with the overall identity while maintaining a distinctive shape for the logo.
+						The logo was created in Adobe Illustrator to ensure perfect vector precision and infinite
+						scalability.
 					</aside>
 				</section>
 
@@ -3184,18 +3236,12 @@
 					</div>
 
 					<aside class="notes">
-						Première partie de la typographie : les polices pour l'humain et l'interface.
-						Merriweather : Serif classique avec empattements. Les empattements ancrent visuellement le
-						texte, évoquent la stabilité et le sérieux.
-						Utilisée pour les titres et les citations. Évoque l'autorité du dossier juridique, le document
-						officiel, la presse, les archives.
-						Intemporelle, elle apporte de la gravité sans être austère.
-						Inter : Sans-serif neutre et moderne. C'est la police principale de l'interface.
-						Douce, neutre, familière. C'est une police très courante dans les interfaces modernes, donc
-						rassurante.
-						Elle ne surprend jamais, ne distrait pas, ne fatigue pas. Excellente lisibilité à toutes les
-						tailles.
-						C'est le choix parfait pour une interface Trauma-Informed : prévisible et confortable.
+						<ul>
+							<li><strong>Choix</strong> : Lexend (Titre & Corps).</li>
+							<li><strong>Raison</strong> : Conçue pour réduire le stress visuel et améliorer la fluidité.
+							</li>
+							<li><strong>Impact</strong> : Essentiel pour des contenus longs et pénibles à lire.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -3239,7 +3285,8 @@
 								cognitive</p>
 							<div
 								style="font-family: 'Inter', sans-serif; font-size: 0.9em; line-height: 1.6; margin-bottom: 1rem;">
-								Optimisée pour la dyslexie<br>et la fatigue cognitive.
+								Optimisée pour la dyslexie<br>
+								et la fatigue cognitive.
 							</div>
 							<ul style="font-size: 0.75em; line-height: 1.6; margin: 0;">
 								<li><strong>Formes optimisées</strong> : Lettres moins confondables</li>
@@ -3408,26 +3455,30 @@
 
 						<!-- Colonne 2 : UX & Rigueur -->
 						<div class="card fragment fade-up" style="padding: 1rem;">
-							<h4 style="color: var(--color-bronze); font-size: 0.85em; margin-bottom: 0.8rem;"><i
-									class="ri-quill-pen-line"></i> Structure & UI</h4>
-							<ul style="font-size: 0.7em; line-height: 1.8; margin-bottom: 1rem;">
-								<li><strong>Swiss Design</strong> — Grilles & Clarté</li>
-								<li><strong>BastiUI</strong> — Systèmes UI Modernes</li>
-								<li><strong>Baymard / NNG</strong> — Robustesse UX</li>
-								<li><strong>Smashing Mag</strong> — Standards Web</li>
-							</ul>
+							<div>
+								<h4 style="color: var(--color-bronze); font-size: 0.85em; margin-bottom: 0.8rem;"><i
+										class="ri-quill-pen-line"></i> Structure & UI</h4>
+								<ul style="font-size: 0.7em; line-height: 1.8; margin-bottom: 1rem;">
+									<li><strong>Swiss Design</strong> — Grilles & Clarté</li>
+									<li><strong>BastiUI</strong> — Systèmes UI Modernes</li>
+									<li><strong>Baymard / NNG</strong> — Robustesse UX</li>
+									<li><strong>Smashing Mag</strong> — Standards Web</li>
+								</ul>
+							</div>
 						</div>
 
 						<!-- Colonne 3 : Éthique & Soin -->
 						<div class="card highlight fragment fade-up"
 							style="padding: 1rem; border-left: 4px solid var(--color-bronze);">
-							<h4 style="color: var(--color-bronze); font-size: 0.85em; margin-bottom: 0.8rem;"><i
-									class="ri-heart-pulse-line"></i> Éthique & Care</h4>
-							<ul style="font-size: 0.7em; line-height: 1.8; margin-bottom: 1rem;">
-								<li><strong>TID Collective</strong> — Trauma-Informed</li>
-								<li><strong>Nous Toutes</strong> — Réalité terrain</li>
-								<li><strong>A11y Project</strong> — Accessibilité</li>
-							</ul>
+							<div>
+								<h4 style="color: var(--color-bronze); font-size: 0.85em; margin-bottom: 0.8rem;"><i
+										class="ri-heart-pulse-line"></i> Éthique & Care</h4>
+								<ul style="font-size: 0.7em; line-height: 1.8; margin-bottom: 1rem;">
+									<li><strong>TID Collective</strong> — Trauma-Informed</li>
+									<li><strong>Nous Toutes</strong> — Réalité terrain</li>
+									<li><strong>A11y Project</strong> — Accessibilité</li>
+								</ul>
+							</div>
 							<div
 								style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(120,100,6,0.2);">
 								<p style="font-size: 0.65em; font-weight: bold; margin: 0; line-height: 1.4;">
@@ -3474,10 +3525,12 @@
 						<p class="title-secondary">Du concept au prototype</p>
 					</div>
 					<aside class="notes">
-						Acte 7 : Maquettes et Wireframes.
-						Après avoir défini l'identité visuelle, il faut passer à la conception des interfaces.
-						On va voir le processus : wireframes basse fidélité, puis maquettes haute fidélité sur Figma, et
-						enfin le prototype interactif.
+						<ul>
+							<li><strong>Sujet</strong> : Conception UI & UX.</li>
+							<li><strong>Processus</strong> : Wireframes (Lo-Fi) → Maquettes (Hi-Fi) → Prototype
+								Interactif.</li>
+							<li><strong>Objectif</strong> : Donner vie au concept Trauma-Informed.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -3542,14 +3595,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Wireframes de la landing page du site vitrine.
-						Version desktop : Hero avec titre accrocheur, section features pour expliquer les bénéfices, CTA
-						(Call To Action) pour s'inscrire à la mailing list.
-						Version mobile : Approche mobile-first. Navigation simplifiée, contenu empilé verticalement, CTA
-						bien visible.
-						Ces wireframes ont permis de valider la structure avant de passer au design haute fidélité.
-						On voit déjà la hiérarchie : le message principal en haut, les arguments ensuite, l'action à la
-						fin.
+						<ul>
+							<li><strong>Conteneur principal</strong> : La "Card".</li>
+							<li><strong>Design</strong> : Bordure fine, fond légèrement plus clair que le fond de page.
+							</li>
+							<li><strong>Contenu</strong> : Titre, Icône, Corps. Structure unifiée.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -3574,15 +3625,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Wireframes de l'application LUCID elle-même.
-						Dashboard : Vue d'ensemble des sessions d'investigation. La personne utilisatrice voit ses
-						différentes
-						enquêtes, peut en créer une nouvelle, accéder aux sessions existantes.
-						Chronologie : Visualisation temporelle des messages. Permet de voir l'évolution des
-						conversations dans le temps, identifier les patterns, les pics d'activité.
-						Ces wireframes ont été essentiels pour définir la navigation et la hiérarchie de l'information
-						dans l'app.
-						On a itéré plusieurs fois sur ces wireframes avant de passer aux maquettes Figma.
+						<ul>
+							<li><strong>Low-Fidelity</strong> : Balsamiq / Excalidraw.</li>
+							<li><strong>Focus</strong> : Structure, Flux, Hiérarchie de l'information (pas de couleurs).
+							</li>
+							<li><strong>Validation</strong> : Test rapide de l'ergonomie avant de polir.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -3606,15 +3654,11 @@
 						</p>
 					</div>
 					<aside class="notes">
-						Avant de créer les maquettes, j'ai construit un design system complet sur Figma.
-						Un design system, c'est une bibliothèque de composants réutilisables : boutons, cards, inputs,
-						navigation, modales, etc.
-						Avantages : cohérence visuelle garantie, gain de temps énorme (on ne recrée pas les mêmes
-						éléments à chaque écran), facilite la collaboration.
-						Tous les composants respectent le design system défini précédemment : palette de couleurs
-						(Bronze, Violet, Papier), typographie (Merriweather, Inter, JetBrains Mono), espacements
-						cohérents.
-						C'est la base pour créer des maquettes haute fidélité rapidement et de manière cohérente.
+						<ul>
+							<li><strong>Avant/Après</strong> : Le squelette vs Le corps habillé.</li>
+							<li><strong>Constat</strong> : La structure reste la même, l'émotion change radicalement.
+							</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -3756,13 +3800,12 @@
 						<p class="title-secondary">Supports, Stratégie & Diffusion</p>
 					</div>
 					<aside class="notes">
-						Acte 8 : Communication et Visibilité.
-						Après avoir conçu l'identité visuelle et les maquettes, il faut créer les supports de
-						communication et définir la stratégie de diffusion.
-						On va voir les supports créés (flyer, vidéo, visuels réseaux sociaux), la stratégie de
-						visibilité (SEO, dual channel), et le plan de diffusion (calendrier éditorial, partenariats).
-						Cet acte couvre à la fois la création des supports (CCP1) et la stratégie de communication
-						digitale (CCP2).
+						<ul>
+							<li><strong>Sujet</strong> : Communication & Visibilité.</li>
+							<li><strong>Contenu</strong> : Supports créés (CCP1) + Stratégie de diffusion (CCP2).</li>
+							<li><strong>Objectif</strong> : Rendre l'outil visible pour les personnes qui en ont besoin.
+							</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -3845,17 +3888,12 @@
 					</div>
 
 					<aside class="notes">
-						Choix techniques pour une production professionnelle.
-						Format A5 standard (148×210mm) avec 3mm de fonds perdus (bleeding) : cela signifie que l'image
-						déborde de 3mm de chaque côté pour éviter les bords blancs après la coupe.
-						Marges de sécurité de 12mm : zone où on ne place pas de texte critique, pour compenser les
-						variations possibles du massicotage.
-						300 DPI minimum pour une qualité d'impression professionnelle. Papier couché mat 170g pour une
-						bonne tenue en main.
-						Outils Adobe : InDesign pour la mise en page et l'export PDF print-ready, Illustrator pour le
-						logo vectoriel qui reste net à toutes les tailles.
-						Export en PDF/X-1a pour garantir la compatibilité avec les imprimeurs professionnels. Profil
-						CMYK pour l'impression offset.
+						<ul>
+							<li><strong>Format</strong> : A5 (discret).</li>
+							<li><strong>Technique</strong> : 3mm fonds perdus, 300 DPI, CMYK.</li>
+							<li><strong>Outils</strong> : InDesign (Mise en page) + Illustrator (Logo).</li>
+							<li><strong>Export</strong> : PDF/X-1a pour imprimeur pro.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -3864,12 +3902,12 @@
 					data-background-video-loop data-background-video-muted>
 					<!-- Slide sans texte, juste la vidéo en fond -->
 					<aside class="notes">
-						Animation 3D du flyer en rotation. Permet de visualiser le design dans un contexte réaliste et
-						dynamique.
-						La vidéo montre le flyer sous tous les angles, avec un éclairage professionnel qui met en valeur
-						les contrastes.
-						Pas de texte sur cette slide pour laisser l'animation parler d'elle-même et créer un moment
-						visuel fort dans la présentation.
+						<ul>
+							<li><strong>Palette Sombre</strong> : Background `#121212` (pas noir total).</li>
+							<li><strong>Accent Bronze</strong> : `#D4AF37`. Évoque le précieux, le sérieux (pas
+								l'urgence du rouge).</li>
+							<li><strong>Validation</strong> : Contraste AA/AAA respecté pour l'accessibilité.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -3889,16 +3927,11 @@
 						</p>
 					</div>
 					<aside class="notes">
-						Mockup photoréaliste montrant le flyer dans une mise en situation réelle.
-						Ce type de rendu permet de visualiser le produit final tel qu'il sera perçu par le public cible.
-						Stratégie de distribution ciblée : CIDFF (Centres d'Information sur les Droits des Femmes et des
-						Familles), Planning Familial, associations comme #NousToutes.
-						Distribution également prévue lors de manifestations féministes : marches contre les VSS,
-						événements 8 mars, marches des fiertés.
-						Le flyer présente LUCID comme un outil d'empowerment, pas comme une solution miracle. On
-						respecte l'autonomie de la personne.
-						Ton rassurant, non-anxiogène : on évite les images choquantes, les couleurs agressives. On mise
-						sur la clarté et la sécurité.
+						<ul>
+							<li><strong>Rendu</strong> : Photoréaliste (Mise en situation).</li>
+							<li><strong>Distribution</strong> : CIDFF, Planning Familial, Manifs.</li>
+							<li><strong>Ton</strong> : Non-anxiogène. Empowerment.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -3964,22 +3997,12 @@
 						</p>
 					</div>
 					<aside class="notes">
-						Storyboard de la vidéo "La Révélation" : 5 séquences dessinées à la main, durée totale environ
-						23 secondes.
-						Séquence 1 (8s) : Femme de dos 3/4, scrolle frénétiquement son téléphone, le jette, s'accoude
-						sur la table et se tient la tête de désespoir. Représente la submersion face aux milliers de
-						messages.
-						Séquence 2 (1s) : Écran noir, rupture. Transition brutale qui marque le changement.
-						Séquence 3 (4s) : Close-up très serré sur un clavier, un doigt vient se poser sur la touche
-						Entrée, un halo de lumière se dégage et éblouit. C'est le déclic, le moment où LUCID entre en
-						action.
-						Séquence 4 (6s) : Close-up de la même personne qu'au début, son visage passe de crispé à
-						détendu, esquisse un sourire pendant que son visage s'illumine. La transformation émotionnelle.
-						Séquence 5 (4s) : Logo de LUCID qui fade in avec un effet de zoom léger. Conclusion.
-						Voix off : texte puissant qui explique la mission de LUCID sans jargon technique, focus sur le
-						bénéfice humain : ne pas revivre le trauma.
-						Ces croquis ont servi de base pour la production vidéo : génération des clips avec IA, puis
-						montage avec Premiere Pro.
+						<ul>
+							<li><strong>Séquence</strong> : Chaos (8s) → Rupture (1s) → Révélation (4s) → Clarté (6s).
+							</li>
+							<li><strong>Message</strong> : "Prouver sans revivre".</li>
+							<li><strong>Technique</strong> : Croquis manuels → IA Vidéo (Veo) → Montage.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4027,39 +4050,12 @@
 						</p>
 					</div>
 					<aside class="notes">
-						Vidéo finale "La Révélation" : résultat du montage des 5 séquences du storyboard.
-						Production : keyframes créés avec Midjourney/Gemini, puis clips vidéo générés avec Veo 3.1 (IA
-						vidéo générative de Google).
-						Post-production avec Adobe Premiere Pro : montage des clips, ajout des transitions (cut noir,
-						fondus), color grading pour uniformiser les séquences, intégration d'assets audio libres de
-						droit (ambiances, SFX), enregistrement et intégration de la voix off.
-						J'ai également utilisé un outil personnel pour faciliter certaines étapes du workflow vidéo.
-						QR Code : permet d'accéder directement à la vidéo en ligne, pratique pour partager sur supports
-						print ou lors de présentations.
-						Format 16:9 court (23 secondes) : choix stratégique justifié par plusieurs raisons.
-						1) LinkedIn natif : le format 16:9 est le format natif de LinkedIn, il s'affiche en plein écran
-						dans le feed sans crop. C'est la plateforme prioritaire pour toucher les personnes
-						professionnelles
-						(avocats et avocates, personnes expertes).
-						2) YouTube pré-roll : format idéal pour les annonces YouTube (15-30s), si on décide de faire de
-						la publicité ciblée plus tard.
-						3) Site web hero section : le 16:9 s'intègre parfaitement dans la section hero du site web
-						(lucid.carc.app), sans bandes noires.
-						4) Crop facile en 9:16 : on peut facilement cropper la vidéo en format vertical pour Instagram
-						Reels et Stories, en gardant les éléments importants au centre du cadre.
-						5) Durée courte : 23 secondes, c'est le sweet spot pour capter l'attention sans perdre le
-						spectateur. Sur un sujet sensible comme les VSS, il faut aller à l'essentiel rapidement. Les
-						études montrent que l'attention chute drastiquement après 30 secondes sur les réseaux sociaux.
-						6) Polyvalence : un format 16:9 court peut être utilisé partout (LinkedIn, YouTube, site web,
-						présentations), alors qu'un 9:16 long est limité aux stories/reels.
-						La vidéo raconte visuellement l'histoire de LUCID : du chaos émotionnel (submersion, désespoir)
-						à la clarté (soulagement, espoir).
-						Ton : cinématique, émotionnel, humain. On ne montre pas les fonctionnalités techniques, on
-						montre le bénéfice utilisateur : ne pas revivre le trauma.
-						Direction artistique : lumière froide/bleue pour le chaos, lumière chaude/dorée (Bronze #786406)
-						pour la clarté. Cohérence avec l'identité visuelle LUCID.
-						Le message clé : "LUCID : des preuves claires sans revivre l'histoire." C'est la promesse
-						centrale de l'outil.
+						<ul>
+							<li><strong>Format</strong> : 16:9 court (24s).</li>
+							<li><strong>Pourquoi 24s ?</strong> : Attention span court. Sweet spot social media.</li>
+							<li><strong>Diffusabilité</strong> : LinkedIn, YouTube, Hero Header.</li>
+							<li><strong>Stack</strong> : Veo 3.1 (IA Gen) + Premiere Pro (Montage/Color Grading).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4094,18 +4090,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Carrousel Instagram : format idéal pour raconter une histoire en plusieurs slides.
-						Slide 1 : Présentation du problème. Des milliers de messages éparpillés, impossible de s'y
-						retrouver. Accroche émotionnelle.
-						Slide 2 : Présentation de la solution. LUCID analyse, structure, révèle. Bénéfices clés :
-						recherche sémantique, chronologie, export PDF.
-						Slide 3 : Appel à l'action. Lien vers le site, téléchargement de l'application.
-						Avantages du carrousel : engagement élevé (les gens swipent pour voir la suite), possibilité de
-						développer un argument, format natif d'Instagram.
-						Design : cohérent avec l'identité visuelle (couleurs Bronze/Violet, typographie
-						Merriweather/Inter), lisible sur mobile.
-						Cibles : associations féministes, grand public sensibilisé, personnes victimes qui cherchent des
-						solutions.
+						<ul>
+							<li><strong>Objectif</strong> : Storytelling pédagogique.</li>
+							<li><strong>Structure</strong> : Problème (Chaos) → Solution (Structure) → Action (Lien).
+							</li>
+							<li><strong>Engagement</strong> : Swipe = Micro-engagement.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4130,23 +4120,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Instagram Stories : format éphémère (24h), vertical (9:16), très engageant.
-						Story 1 : Teasing de fonctionnalité ou rappel de la mission de LUCID. Visuel impactant, texte
-						court et lisible.
-						Story 2 : Appel à l'action, lien vers le site ou l'application.
-						Avantages : visibilité maximale (les stories apparaissent en haut du feed Instagram),
-						possibilité d'ajouter des stickers interactifs (sondages, questions, liens swipe-up).
-						Format vertical optimisé pour mobile : les stories sont consommées en déplacement, il faut
-						capter l'attention en 3 secondes maximum.
-						Design : texte lisible même sur petit écran, contrastes forts, animations subtiles (GIF,
-						stickers), identité visuelle respectée (Bronze/Violet).
-						Ces stories permettent de maintenir une présence régulière sur Instagram, de créer du lien avec
-						la communauté, et de rediriger vers le site ou l'application.
-						Stratégie : publier 2-3 stories par semaine pour rester visible sans spammer, varier les
-						contenus (fonctionnalités, témoignages, coulisses, partenariats).
-						Les mêmes visuels sont utilisés sur LinkedIn pour toucher une audience professionnelle (avocats
-						et avocates,
-						associations, personnes intervenant dans le social).
+						<ul>
+							<li><strong>Format</strong> : Vertical 9:16 (Mobile-first).</li>
+							<li><strong>Contenu</strong> : Teasing, Coulisses, Tips rapides.</li>
+							<li><strong>Fréquence</strong> : Quotidienne/Régulière. Capter l'instant.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4177,18 +4155,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Stratégie de visibilité : l'objectif n'est pas le volume de trafic, mais la qualification. Il
-						faut que LUCID soit trouvé par les bonnes personnes au moment du besoin.
-						Positionnement : Tech for Good (outil éthique, pas commercial), Privacy-First (local-first, zéro
-						cloud), Trauma-Informed (conçu pour les victimes), Open Source (transparent, auditable).
-						SEO : mots-clés ciblés sur l'intention de recherche. "Analyse sms preuve justice" = intention
-						transactionnelle (besoin d'outil). "Analyser discussion sans cloud" = intention informationnelle
-						(besoin de sécurité).
-						Structure de la landing page : H1 "Votre Assistant d'Investigation Forensic Local & Sécurisé",
-						meta description optimisée, balises alt sur toutes les images.
-						L'objectif : être trouvé par les personnes victimes, les associations, et les avocats et
-						avocates qui
-						cherchent une solution éthique et sécurisée.
+						<ul>
+							<li><strong>Stratégie</strong> : Trafic qualifié > Volume.</li>
+							<li><strong>Positionnement</strong> : Tech for Good + Privacy.</li>
+							<li><strong>SEO Long Tail</strong> : Intentions de recherche précises ("export whatsapp
+								justice").</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4235,25 +4207,13 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Stratégie Dual Channel : LUCID est destiné aux victimes, mais son accessibilité dépend des
-						prescripteurs (associations, avocats et avocates). Il faut donc une double stratégie de
-						communication.
-						Canal LinkedIn (B2B) : cible les personnes professionnelles qui vont recommander l'outil.
-						Avocats et avocates en droit
-						de la famille et pénal, personnes expertes judiciaires, DSI d'associations. Objectif :
-						crédibilité
-						technique, conformité RGPD, adoption institutionnelle. Contenus : cas pratiques ("Comment
-						analyser
-						5000 messages sans lecture manuelle"), posts valeurs ("Pourquoi nous avons refusé le
-						Cloud"), annonces de releases.
-						Canal Instagram (B2C) : cible les associations et collectifs qui accompagnent les victimes.
-						Objectif : faire connaître l'outil aux structures de terrain. Contenus : carrousels éducatifs
-						("5 choses à savoir avant d'exporter vos conversations"), tutoriels simplifiés, posts valeurs
-						("Un outil pensé POUR les victimes, pas CONTRE elles"), Reels démo.
-						Cette double approche permet de toucher à la fois les décideurs et décideuses (qui ont le
-						pouvoir de
-						recommander) et les accompagnants et accompagnantes (qui sont au contact des personnes
-						victimes).
+						<ul>
+							<li><strong>B2B (LinkedIn)</strong> : Avocats & Avocates, Experts. Contenu technique & RGPD.
+							</li>
+							<li><strong>B2C (Instagram)</strong> : Associations, Victimes. Contenu éducatif & soutien.
+							</li>
+							<li><strong>But</strong> : Toucher les prescripteurs ET les utilisateurs finaux.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4324,24 +4284,11 @@
 						</p>
 					</div>
 					<aside class="notes">
-						Calendrier éditorial : planification sur 3 mois pour le lancement de LUCID V1.
-						Semaines 1-2 (Teasing) : Préparer le terrain. LinkedIn : post "Pourquoi LUCID ?" qui raconte la
-						genèse du projet. Instagram : carrousel de sensibilisation sur le problème. Actions : création
-						de la page GitHub avec documentation complète.
-						Semaine 3 (Lancement) : Annonce officielle de la V1.0. LinkedIn : post d'annonce avec lien de
-						téléchargement. Instagram : publication de la vidéo "La Révélation" en Reel + Stories. Actions :
-						contact direct avec les associations (CIDFF, France Victimes) pour présenter l'outil.
-						Semaines 4-6 (Éducation) : Montrer comment utiliser LUCID. LinkedIn : cas pratique détaillé.
-						Instagram : tutoriels simplifiés + stories régulières (2-3 par semaine). Actions : soumission
-						aux annuaires (AlternativeTo, Product Hunt).
-						Semaines 7-12 (Engagement) : Maintenir la présence. LinkedIn : posts valeurs + updates (1 par
-						semaine). Instagram : contenu varié (carrousels, témoignages anonymisés). Actions : proposer des
-						formations aux barreaux d'avocats et d'avocates.
-						Fréquence : LinkedIn 1 post par semaine (les personnes professionnelles lisent moins souvent),
-						Instagram 2-3
-						posts par semaine + stories quotidiennes (audience plus engagée).
-						Cette planification permet de construire progressivement la notoriété sans spam, en respectant
-						le rythme de chaque plateforme.
+						<ul>
+							<li><strong>Planification</strong> : Lancement V1 sur 3 mois.</li>
+							<li><strong>Rythme</strong> : LinkedIn 1/sem, Insta 2-3/sem.</li>
+							<li><strong>Progression</strong> : Teasing → Lancement → Éducation → Engagement.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4395,23 +4342,12 @@
 						</p>
 					</div>
 					<aside class="notes">
-						Stratégie de partenariats : l'objectif est d'être recommandé par les structures de confiance,
-						pas de faire de la publicité agressive.
-						Associations : contact direct avec les pôles juridiques des grandes associations (CIDFF, France
-						Victimes, #NousToutes, Planning Familial). Proposer des formations à l'outil, des
-						démonstrations, de la documentation adaptée. L'objectif : que les associations recommandent
-						LUCID aux personnes qu'elles accompagnent.
-						Open Source : documentation technique impeccable sur GitHub pour rassurer les DSI. Référencement
-						sur les annuaires "Privacy Tools" et "Open Source Alternatives" (AlternativeTo, Product Hunt).
-						Participation aux communautés open source et privacy-first.
-						Juridique : contact avec les ordres des avocats et avocates et barreaux locaux. Proposer des
-						présentations
-						lors de formations continues. Être référencé par les personnes expertes judiciaires. L'objectif
-						: que les
-						avocats et avocates recommandent LUCID à leurs clients.
-						Cette stratégie de partenariats est plus lente que la publicité, mais elle construit une
-						crédibilité durable et touche les bonnes personnes.
-						Le message clé : LUCID n'est pas un produit commercial, c'est un outil d'utilité publique.
+						<ul>
+							<li><strong>Stratégie</strong> : Recommandation > Publicité.</li>
+							<li><strong>Associations</strong> : CIDFF, France Victimes (Terrain).</li>
+							<li><strong>Juridique</strong> : Barreaux, Experts (Légitimité).</li>
+							<li><strong>Open Source</strong> : GitHub, Product Hunt (Confiance technique).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4430,10 +4366,11 @@
 						<p class="title-secondary">Le moteur local-first</p>
 					</div>
 					<aside class="notes">
-						Acte 9 : Réalisation technique.
-						Maintenant qu'on a le design, il faut construire le moteur de LUCID.
-						On va voir l'architecture technique, les choix technologiques, et comment tout ça fonctionne
-						ensemble.
+						<ul>
+							<li><strong>Sujet</strong> : Réalisation technique.</li>
+							<li><strong>Contenu</strong> : Stack Site Vitrine + Stack App.</li>
+							<li><strong>Focus</strong> : Sécurité et Performance.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4472,19 +4409,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Site vitrine LUCID : deux interfaces distinctes.
-						Site public (lucid.carc.app) : visible par tous, présente le projet, permet de s'inscrire à la
-						mailing list.
-						Admin WordPress : interface de gestion du contenu, accessible uniquement avec identifiants.
-						Permet de modifier le contenu du site sans toucher au code.
-						Architecture : WordPress headless avec thème custom. Le contenu est géré via WordPress, mais le
-						front est construit avec AstroJS (framework moderne ultra-rapide) et Tailwind CSS (styling
-						utilitaire). AstroJS génère des pages statiques optimisées pour la performance.
-						Backend WordPress : hébergé sur une instance séparée et cachée pour la sécurité. Seule l'API
-						REST est exposée au front.
-						Hébergement : Infomaniak, hébergeur suisse éthique et écologique (100% énergies renouvelables,
-						RGPD compliant, neutralité carbone).
-						Design : responsive, accessible, optimisé pour le SEO. Respect des principes TID.
+						<ul>
+							<li><strong>Site Public</strong> : AstroJS (Statique) + Tailwind. Rapide & Sûr.</li>
+							<li><strong>Backend</strong> : WordPress Headless. Isolé et sécurisé.</li>
+							<li><strong>Hébergement</strong> : Infomaniak (Suisse, Éthique).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4493,7 +4422,7 @@
 					<h3>Pourquoi cette stack ?</h3>
 					<p><small>Sécurité, Performance, Autonomie</small></p>
 					<div class="grid-2" style="gap: 1rem; margin-top: 1rem;">
-						<div class="fragment fade-up card" style="padding: 1rem;">
+						<div class="card fragment fade-up" style="padding: 1rem;">
 							<h4 style="color: var(--color-bronze); font-size: 0.8em; margin: 0 0 0.5rem 0;"><i
 									class="ri-flashlight-line"
 									style="vertical-align: middle; margin-right: 0.3rem;"></i> AstroJS
@@ -4505,7 +4434,7 @@
 								<li><strong>Performance ↑</strong> : cache CDN optimal</li>
 							</ul>
 						</div>
-						<div class="fragment fade-up card" style="padding: 1rem;">
+						<div class="card fragment fade-up" style="padding: 1rem;">
 							<h4 style="color: var(--color-bronze); font-size: 0.8em; margin: 0 0 0.5rem 0;"><i
 									class="ri-plug-line" style="vertical-align: middle; margin-right: 0.3rem;"></i>
 								WordPress Headless</h4>
@@ -4540,33 +4469,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Justification de la stack du site vitrine : choix délibérés pour maximiser sécurité, performance
-						et autonomie.
-
-						AstroJS (Static Site Generation) : Le front est généré en pages HTML statiques à la compilation.
-						Avantages : ultra-léger (0 JavaScript par défaut, seulement ce qui est nécessaire), sécurisé
-						(pas de backend exposé, pas de failles PHP/SQL injection côté public), performant (cache CDN
-						optimal, Lighthouse 97/100). Les pages sont servies instantanément, pas de requêtes dynamiques.
-
-						WordPress Headless : Sert uniquement d'API et de CMS. Pourquoi WordPress ? Écosystème mature
-						avec plugins pour tout : SEO (Yoast/RankMath), FAQ (accordéons), blog (gestion d'articles),
-						médias (optimisation images). Waiting list : stockée directement dans WordPress via un hook
-						personnalisé, pas besoin de Mailchimp, ConvertKit ou autre service tiers. Tout reste sous
-						contrôle, pas de fuite de données.
-
-						Sécurité renforcée : Le backend WordPress est sur une instance séparée et cachée (URL non
-						exposée publiquement). Le front AstroJS communique avec l'API REST WordPress, mais l'admin n'est
-						pas accessible depuis le site public. Surface d'attaque réduite : pas de PHP exposé, pas de
-						plugins vulnérables accessibles. HTTPS obligatoire, chiffrement end-to-end.
-
-						Autonomie totale : Pas de dépendance à des services tiers. Pas de Mailchimp pour les mails, pas
-						de Google Forms pour les formulaires, pas de Disqus pour les commentaires. Tout est hébergé sur
-						notre infrastructure contrôlée. C'est cohérent avec la mission Privacy by Design de LUCID : on
-						ne peut pas prêcher la confidentialité et envoyer les emails des personnes utilisatrices à
-						Mailchimp.
-
-						Cette stack offre le meilleur des deux mondes : la flexibilité de WordPress pour la gestion de
-						contenu, et la performance/sécurité d'un site statique généré avec AstroJS.
+						<ul>
+							<li><strong>AstroJS</strong> : 0 JS par défaut. Surface d'attaque minimale.</li>
+							<li><strong>WP Headless</strong> : Gestion facile sans exposer le CMS.</li>
+							<li><strong>Autonomie</strong> : Pas de Mailchimp/Google Forms. Tout est interne.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4591,20 +4498,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Application LUCID : démonstration en local.
-						L'application tourne sur localhost:5174, c'est le serveur de développement Vite.
-						Architecture actuelle : React pour l'interface, Tailwind CSS pour le styling. L'application
-						fonctionne comme une web app.
-						Roadmap : Le wrapper desktop Tauri (Rust) est prévu pour la V2. Il permettra d'empaqueter
-						l'application en binaire natif ultra-léger (moins de 10 Mo) avec sécurité mémoire renforcée.
-						L'application est conçue pour être 100% locale : aucune donnée ne sort de l'ordinateur, pas de
-						serveur distant, pas de cloud.
-						Fonctionnalités : import de conversations (ZIP WhatsApp/Telegram), recherche sémantique,
-						extraction de citations, chronologie, export PDF.
-						L'interface respecte les principes TID : fil d'Ariane visible, pas de surprises, choix clairs,
-						feedback immédiat.
-						Cette démo montre l'application en action, avec de vraies données (anonymisées).
-						Cliquez sur le lien pour ouvrir l'application dans un nouvel onglet et faire la démo live.
+						<ul>
+							<li><strong>Stack</strong> : React + Vite + Tailwind. V1 Web App.</li>
+							<li><strong>Roadmap</strong> : V2 avec Wrapper Tauri (Rust) pour binaire natif.</li>
+							<li><strong>Local-First</strong> : Tout tourne dans le navigateur/client.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4744,17 +4642,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Bilan des compétences acquises sur ce projet LUCID.
-						Hard Skills : React et Tauri (Rust) pour l'application desktop, SurrealDB pour la base de
-						données graphe, intégration d'IA locale (Ollama + Mistral), Figma et création d'un design system
-						complet.
-						Soft Skills : Trauma-Informed Design (comprendre et appliquer les principes TID), gestion de
-						projet Agile (sprints, backlog, user stories), communication inclusive (langage respectueux,
-						accessibilité), éthique du design (Privacy by Design, éco-conception).
-						Ce projet m'a permis de développer des compétences techniques pointues, mais aussi une
-						sensibilité aux enjeux humains et éthiques du design.
-						LUCID n'est pas juste un projet technique : c'est un projet de sens, au service de personnes en
-						situation de vulnérabilité.
+						<ul>
+							<li><strong>Hard Skills</strong> : React, Tauri (Rust), SurrealDB, Local AI.</li>
+							<li><strong>Soft Skills</strong> : Trauma-Informed Design, Agile, Communication inclusive.
+							</li>
+							<li><strong>Bilan</strong> : Compétences techniques pointues + Sensibilité éthique.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4782,18 +4675,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Roadmap V2 : les perspectives d'évolution de LUCID.
-						Application mobile : une app compagnon pour collecter les preuves en temps réel. Capture d'écran
-						sécurisée, enregistrement de conversations (avec consentement), synchronisation avec l'app
-						desktop.
-						Cloud chiffré optionnel : pour ceux qui veulent un backup sécurisé de leurs données. Chiffrement
-						de bout en bout, clés détenues uniquement par l'utilisateur, hébergement en France.
-						Partenariats : CIDFF (Centres d'Information sur les Droits des Femmes et des Familles), France
-						Victimes (réseau d'aide aux victimes), 3018 (numéro national contre le cyberharcèlement).
-						L'objectif : faire de LUCID un outil reconnu et recommandé par les associations et institutions
-						qui accompagnent les personnes victimes.
-						LUCID a vocation à devenir un standard dans l'accompagnement juridique des personnes victimes de
-						violences.
+						<ul>
+							<li><strong>Mobile</strong> : App compagnon pour collecte rapide.</li>
+							<li><strong>Cloud Chiffré</strong> : Backup E2EE optionnel.</li>
+							<li><strong>Partenariats</strong> : Institutionnaliser l'outil (CIDFF, 3018).</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4819,20 +4705,11 @@
 					</div>
 
 					<aside class="notes">
-						Réflexion personnelle sur LUCID.
-						Ce projet me tient profondément à cœur. Paradoxalement, mon souhait le plus cher serait qu'il
-						n'ait jamais eu de raison d'exister. Qu'il n'y ait pas de violences à documenter, pas de preuves
-						à rassembler.
-						Mais puisque ces violences existent, autant essayer d'aider ceux qui les subissent.
-						J'ai appris énormément sur ce projet : techniquement bien sûr, mais surtout humainement. Le
-						Trauma-Informed Design, l'éthique, l'accessibilité, la communication inclusive. Des sujets que
-						je n'avais jamais vraiment explorés en profondeur avant.
-						Toutes ces réflexions ont changé ma façon de voir le design, le développement, et mon rôle en
-						tant que concepteur. C'est un tournant majeur dans ma carrière, mais aussi dans qui je suis en
-						tant que personne.
-						LUCID m'a appris que la technique n'est jamais neutre, et que chaque choix de design a un impact
-						réel sur la vie des gens.
-						C'est une responsabilité que je prends très au sérieux désormais.
+						<ul>
+							<li><strong>Paradoxe</strong> : Un outil qu'on aimerait inutile.</li>
+							<li><strong>Apprentissage</strong> : La technique n'est jamais neutre.</li>
+							<li><strong>Responsabilité</strong> : Chaque choix de design impacte des vies.</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -4856,13 +4733,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Merci d'avoir suivi cette présentation de LUCID.
-						Je suis disponible pour répondre à vos questions sur le projet, les choix techniques, le design,
-						l'éthique, les perspectives.
-						Le site est en ligne à lucid.carc.app, n'hésitez pas à aller le voir.
-						LUCID est un projet de sens, au service de personnes en situation de vulnérabilité. C'est un
-						projet qui me tient à cœur.
-						Merci pour votre attention.
+						<ul>
+							<li><strong>Grain SVG</strong> : Appliqué en overlay.</li>
+							<li><strong>Effet</strong> : "Brise" le froid du numérique.</li>
+							<li><strong>Sensation</strong> : Tactile, papier, organique. Moins stérile.</li>
+						</ul>
 					</aside>
 				</section>
 
